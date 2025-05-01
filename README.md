@@ -1,7 +1,6 @@
-# Web-dev-task
+# Changelog
 
-Untuk tugas pemweb
-
-pertama save di branch yang dibuat masing masing kalau mau update biar dites dulu kalau error berarti diperbaiki.
-
-masukkan ke main jika sudah disetujui dan dites kalau jadi
+1. content-box untuk membuat setiap section ada box disekitarnya(warna putih)
+2. content-box-with-image untuk membuat ada gambar dibagian samping descripsi
+3. memperbaruhi tampilan header website
+4. optimisasi kecil lainnya
