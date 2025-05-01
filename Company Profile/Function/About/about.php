@@ -23,11 +23,12 @@
 </header>
 
   <main>
-    <section>
+    <section class="content-box">
       <h2>Who Are we?</h2>
       <p>Hey you, you're finally awake.</p>
     </section>
-    <section>
+
+    <section class="content-box">
       <h2>Our Mission</h2>
       <p>Do anything other than the main quest</p>
     </section>
