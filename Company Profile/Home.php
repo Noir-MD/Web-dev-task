@@ -32,28 +32,38 @@
   </header>
 
   <main>
-    <section class="content-box">
-      <h2>Best Deck in the Current Format</h2>
-      <h3>Tier 1</h3>
-      <p>Blue-Eyes</p>
+    
+  <section class="content-box">
+    <div class="content-with-image">
+      <div class="text-content">
+        <h2>Best Deck in the Current Format</h2>
+        <h3>Tier 1</h3>
+        <p>Blue-Eyes</p>
 
-      <br>
+        <br>
 
-      <h3>Tier 2</h3>
-      <p>Snake-eyes Fiendsmith</p>
-      <p>Snake-eyes Fire King</p>
+        <h3>Tier 2</h3>
+        <p>Snake-eyes Fiendsmith</p>
+        <p>Snake-eyes Fire King</p>
 
-      <br>
+        <br>
 
-      <h4>Tier 3</h4>
-      <p>Memento</p>
-      <p>White Forest Azamina</p>
-      <p>Tenpai Dragon</p>
-      <p>Centur-Ion</p>
-      <p>Fiendsmith</p>
-      <p>Branded</p>
-      <p>Adamancipator</p>
-    </section>
+        <h4>Tier 3</h4>
+        <p>Memento</p>
+        <p>White Forest Azamina</p>
+        <p>Tenpai Dragon</p>
+        <p>Centur-Ion</p>
+        <p>Fiendsmith</p>
+        <p>Branded</p>
+        <p>Adamancipator</p>
+      </div>
+
+      <div class="image-content">
+        <img src="Images/Test.png" alt="sample image">
+      </div>
+    </div>
+  </section>
+
   </main>
 
   <footer>

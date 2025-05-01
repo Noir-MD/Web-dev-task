@@ -2,11 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  background: #5f5f5f;
   color: #333;
 }
 
-.wrapper {
+.wrapper { /* untuk footer dan headernya menyesuaikan sesuai lebar layarnya*/
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -79,7 +79,7 @@ main {
   flex: 1;
 }
 
-.content-box {
+.content-box { /* buat ngasih box di bagian isisnya biar background bisa diganti warnanya kalau mau*/
   background-color: white;
   padding: 5%;
   border-radius: 8px;
@@ -87,6 +87,26 @@ main {
   margin: 20px auto;
   width: 90%;
   max-width: 1200px;
+}
+
+.content-with-image {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* buat edit jarak gambar dan textnya */
+}
+
+.text-content {
+  flex: 2;
+}
+
+.image-content {
+  flex: 1;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* ujung gambarnya biar melengkung */
 }
 
 footer {
