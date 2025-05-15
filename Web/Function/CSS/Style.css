@@ -1,0 +1,41 @@
+/* basic */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* logo */
+.logo-bar img,
+.logo img {
+  max-height: 80px;
+  width: auto;
+  object-fit: cover;
+}
+
+/* content box and border radius */
+.content-box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Custom image style */
+img.rounded.shadow {
+  border-radius: 0.75rem !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08) !important;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+}
