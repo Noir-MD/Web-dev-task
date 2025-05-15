@@ -1,3 +1,8 @@
+# Version 1.1
+Changelog:  
+- add the company data for the website
+- add the image needed for the website
+
 # Bootstrap Installation
 
 
