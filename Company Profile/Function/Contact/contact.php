@@ -46,11 +46,11 @@
     <div class="container">
       <section class="content-box mb-4">
         <h2>Lokasi Toko</h2>
-        <p>Masukkan alamat</p>
+        <p>Bukit Cimanggu City Blok V6 no.35</p>
       </section>
       <section class="content-box mb-4">
         <h2>Kontak Pemilik</h2>
-        <p>nomor hpnya</p>
+        <p>081310921832</p>
       </section>
     </div>
   </main>
