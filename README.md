@@ -1,7 +1,7 @@
 # Web-dev-task
 
-Untuk tugas pemweb
+Follow this video for bootstrap installation 
+https://www.youtube.com/watch?v=cFjWCTk6lXc
 
-pertama save di branch yang dibuat masing masing kalau mau update biar dites dulu kalau error berarti diperbaiki.
-
-masukkan ke main jika sudah disetujui dan dites kalau jadi
+Path for CSS output after inserting src file into your own locally saved project:
+`../src`
