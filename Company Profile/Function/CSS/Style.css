@@ -1,120 +1,41 @@
+/* basic */
+
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #5f5f5f;
+  background: #fff;
   color: #333;
 }
 
-.wrapper { /* untuk footer dan headernya menyesuaikan sesuai lebar layarnya*/
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* bagian atas */
-.main-header {
-  background-color: #1a1d58;
-  color: white;
-}
-
-.top-bar {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
-  background-color: #1a1d58;
-  font-size: 14px;
-}
-
-.store-info span {
-  margin-left: 15px;
-}
-
-.logo-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 20px;
-}
-
+/* logo */
+.logo-bar img,
 .logo img {
-  height: 100px;
+  max-height: 80px;
   width: auto;
   object-fit: cover;
 }
 
-nav {
-  background-color: #1a1d58;
-  padding: 10px 0;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  margin: 0 15px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* bagian tengah */
-
-h1 {
-  text-align: center;
-  margin: 20px 0;
-}
-
-main {
+/* content box and border radius */
+.content-box {
+  background-color: #fff;
   padding: 2rem;
-  flex: 1;
-}
-
-.content-box { /* buat ngasih box di bagian isisnya biar background bisa diganti warnanya kalau mau*/
-  background-color: white;
-  padding: 5%;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  width: 90%;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  margin: 2rem auto;
+  width: 100%;
   max-width: 1200px;
 }
 
-.content-with-image {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px; /* buat edit jarak gambar dan textnya */
+/* Custom image style */
+img.rounded.shadow {
+  border-radius: 0.75rem !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.08) !important;
 }
 
-.text-content {
-  flex: 2;
-}
-
-.image-content {
-  flex: 1;
-}
-
-.image-content img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px; /* ujung gambarnya biar melengkung */
-}
-
+/* Footer */
 footer {
-
   background: #222;
   color: #fff;
   text-align: center;
-  padding: 1rem;
-  position: sticky;
+  padding: 1rem 0;
   width: 100%;
 }
