@@ -48,25 +48,39 @@
   <!-- Main Content -->
   <main class="flex-grow-1">
     <section class="container my-4">
-      <div class="row align-items-center">
-        <div class="col-md-7">
-          <h2>Best Deck in the Current Format</h2>
-          <h3 class="mt-4">Tier 1</h3>
-          <p>Blue-Eyes</p>
-          <h3 class="mt-4">Tier 2</h3>
-          <p>Snake-eyes Fiendsmith</p>
-          <p>Snake-eyes Fire King</p>
-          <h4 class="mt-4">Tier 3</h4>
-          <p>Memento</p>
-          <p>White Forest Azamina</p>
-          <p>Tenpai Dragon</p>
-          <p>Centur-Ion</p>
-          <p>Fiendsmith</p>
-          <p>Branded</p>
-          <p>Adamancipator</p>
-        </div>
-        <div class="col-md-5 text-center">
-          <img src="Images/Test.png" alt="sample image" class="img-fluid rounded shadow">
+      <div class="row">
+        <div class="col-md-12">
+          <section class="content-box mb-4 d-flex flex-column flex-md-row align-items-center">
+            <div>
+              <h2>British Propolish</h2>
+              <p>British Propolis adalah propolis premium asal Inggris dari lebah empat musim, berkualitas tinggi dan direkomendasikan di Indonesia.</p>
+            </div>
+            <div class="ms-md-4 mt-3 mt-md-0">
+              <img src="Images/british 1.jpeg" alt="british 1" class="img-fluid rounded shadow" style="max-width:220px; max-height:180px; object-fit:contain; background:#fff;">
+            </div>
+          </section>
+
+          <section class="content-box mb-4 d-flex flex-column flex-md-row align-items-center">
+            <div>
+              <h2>Steffie</h2>
+              <p>Steffi adalah pemanis alami berupa stevia tetes. Steffi dirancang sebagai pengganti gula yang aman dan sehat, dengan kandungan kalori nol dan rasa manis yang kuat</p>
+            </div>
+            <div class="ms-md-4 mt-3 mt-md-0">
+              <img src="Images/steffie 1.jpeg" alt="british 1" class="img-fluid rounded shadow" style="max-width:220px; max-height:180px; object-fit:contain; background:#fff;">
+            </div>
+          </section>
+
+
+          <section class="content-box mb-4 d-flex flex-column flex-md-row align-items-center">
+            <div>
+              <h2>Madu THE POST</h2>
+              <p>Madu THE POST adalah madu murni berkualitas tinggi yang diambil langsung dari alam, tanpa campuran. Kaya nutrisi untuk mendukung daya tahan tubuh, meningkatkan energi, dan menjaga kesehatan secara alami. Cocok dikonsumsi setiap hari.</p>
+            </div>
+            <div class="ms-md-4 mt-3 mt-md-0">
+              <img src="Images/madu Tpose.jpeg" alt="british 1" class="img-fluid rounded shadow" style="max-width:220px; max-height:180px; object-fit:contain; background:#fff;">
+            </div>
+          </section>
+
         </div>
       </div>
     </section>
