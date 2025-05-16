@@ -3,7 +3,7 @@ $secondary: #01752e;
 
 @import "../asset/node_modules/bootstrap/scss/bootstrap.scss";
 @import "../asset/node_modules/bootstrap/dist/css/bootstrap.min.css";
-@import "../Web/Function/CSS/Style.css";
+@import "./Style.css";
 
 .content-box {
   transition: box-shadow 0.3s ease;
