@@ -12,20 +12,10 @@
 <body>
 <div class="container-fluid min-vh-100 d-flex flex-column p-0">
 
-  <!-- Top Bar -->
-  <div class="bg-light py-2 px-3 border-bottom">
-    <span class="fw-bold">UMI IKA STORE</span>
-  </div>
-
-  <!-- Logo Bar -->
-  <div class="d-flex justify-content-center align-items-center py-4">
-    <img src="Images/logo.png" alt="Company Logo" class="img-fluid" style="max-height: 80px;">
-  </div>
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container">
-      <a class="navbar-brand" href="home.php">Company Profile</a>
+      <a class="navbar-brand" href="home.php">UMI IKA STORE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
