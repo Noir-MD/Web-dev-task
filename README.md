@@ -1,7 +1,7 @@
-# Version 1.1
+# Version 1.3
 Changelog:  
-- add the company data for the website
-- add the image needed for the website
+- adding a reuseable section command for the website
+- adding db connection code if needed
 
 # Bootstrap Installation
 

@@ -14,16 +14,21 @@
 
   <!-- Main Content -->
   <main class="flex-grow-1">
-    <div class="container">
-      <section class="content-box mb-4">
-        <h2>Lokasi Toko</h2>
-        <p>Bukit Cimanggu City Blok V6 no.35</p>
-      </section>
-      <section class="content-box mb-4">
-        <h2>Kontak Pemilik</h2>
-        <p>081310921832</p>
-      </section>
-    </div>
+    <?php  
+
+      $title = "Lokasi Toko";
+      $content = '
+          <p>Bukit Cimanggu City Blok V6 no.35</p>
+        ';
+      include '../../../src/partials/section.php';
+
+      $title = "Kontak Pemilik";
+      $content = '
+          <p>081310921832</p>
+        ';
+      include '../../../src/partials/section.php';
+
+    ?>
   </main>
 
   <!-- Footer -->
