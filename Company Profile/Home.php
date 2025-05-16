@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container-fluid min-vh-100 d-flex flex-column p-0">
-
+  
   <!-- Navigation -->
   <?php $active = 'home'; include __DIR__ . '/../src/Partials/navbar.php'; ?>
 
@@ -20,45 +20,25 @@
     </div>
   </header>
 
+
   <!-- Main Content -->
   <main class="flex-grow-1">
-    <section class="container my-4">
-      <div class="row">
-        <div class="col-md-12">
-          <section class="content-box mb-4 d-flex flex-column flex-md-row align-items-center">
-            <div>
-              <h2>British Propolish</h2>
-              <p>British Propolis adalah propolis premium asal Inggris dari lebah empat musim, berkualitas tinggi dan direkomendasikan di Indonesia.</p>
-            </div>
-            <div class="ms-md-4 mt-3 mt-md-0">
-              <img src="Images/british 1.jpeg" alt="british 1" class="img-fluid rounded shadow" style="max-width:220px; max-height:180px; object-fit:contain; background:#fff;">
-            </div>
-          </section>
+<?php  
+  $title = "British Propolish";
+  $desc = "British Propolis adalah propolis premium asal Inggris dari lebah empat musim, berkualitas tinggi dan direkomendasikan di Indonesia.";
+  $img = "Images/british 1.jpeg";
+  include '../src/partials/product-section.php';
 
-          <section class="content-box mb-4 d-flex flex-column flex-md-row align-items-center">
-            <div>
-              <h2>Steffie</h2>
-              <p>Steffi adalah pemanis alami berupa stevia tetes. Steffi dirancang sebagai pengganti gula yang aman dan sehat, dengan kandungan kalori nol dan rasa manis yang kuat</p>
-            </div>
-            <div class="ms-md-4 mt-3 mt-md-0">
-              <img src="Images/steffie 1.jpeg" alt="british 1" class="img-fluid rounded shadow" style="max-width:220px; max-height:180px; object-fit:contain; background:#fff;">
-            </div>
-          </section>
+  $title = "Steffie";
+  $desc = "Steffi adalah pemanis alami berupa stevia tetes. Steffi dirancang sebagai pengganti gula yang aman dan sehat, dengan kandungan kalori nol dan rasa manis yang kuat";
+  $img = "Images/steffie 1.jpeg";
+  include '../src/partials/product-section.php';
 
-
-          <section class="content-box mb-4 d-flex flex-column flex-md-row align-items-center">
-            <div>
-              <h2>Madu THE POST</h2>
-              <p>Madu THE POST adalah madu murni berkualitas tinggi yang diambil langsung dari alam, tanpa campuran. Kaya nutrisi untuk mendukung daya tahan tubuh, meningkatkan energi, dan menjaga kesehatan secara alami. Cocok dikonsumsi setiap hari.</p>
-            </div>
-            <div class="ms-md-4 mt-3 mt-md-0">
-              <img src="Images/madu Tpose.jpeg" alt="british 1" class="img-fluid rounded shadow" style="max-width:220px; max-height:180px; object-fit:contain; background:#fff;">
-            </div>
-          </section>
-
-        </div>
-      </div>
-    </section>
+  $title = "Madu THE POST";
+  $desc = "Madu THE POST adalah madu murni berkualitas tinggi yang diambil langsung dari alam, tanpa campuran. Kaya nutrisi untuk mendukung daya tahan tubuh, meningkatkan energi, dan menjaga kesehatan secara alami. Cocok dikonsumsi setiap hari.";
+  $img = "Images/madu Tpose.jpeg";
+  include '../src/partials/product-section.php';
+?>
   </main>
 
   <!-- Footer -->

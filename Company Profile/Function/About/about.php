@@ -9,27 +9,34 @@
 <body>
 <div class="container-fluid min-vh-100 d-flex flex-column p-0">
 
+<body>
+<div class="container-fluid min-vh-100 d-flex flex-column p-0">
+
   <!-- Navigation -->
   <?php $active = 'about'; include __DIR__ . '/../../../src/Partials/navbar.php'; ?>
 
   <!-- Main Content -->
   <main class="flex-grow-1">
-    <div class="container">
-      <section class="content-box mb-4">
-        <h2>Tentang UMI IKA STORE</h2>
-        <p>Umi Ika Store adalah toko terpercaya yang menyediakan berbagai produk suplemen kesehatan dan herbal alami pilihan. 
-          Kami berkomitmen membantu kamu menjaga kebugaran, meningkatkan daya tahan tubuh, serta mendukung pemulihan secara alami dan aman.</p>
-      </section>
-      <section class="content-box mb-4">
-        <h2>Produk Utama</h2>
-        <p>Produk-Produk di toko kami mencakup hal hal seperti:</p>
-        <ul>
-          <li>Suplemen imun dan energi</li>
-          <li>Vitamin harian & multivitamin</li>
-          <li>Suplemen olahraga & kebugaran</li>
-        </ul>
-      </section>
-    </div>
+    <?php  
+
+      $title = "Tentang Kami";
+      $content = '
+          <p>Umi Ika Store adalah toko terpercaya yang menyediakan berbagai produk suplemen kesehatan dan herbal alami pilihan. Kami berkomitmen membantu kamu menjaga kebugaran, meningkatkan daya tahan tubuh, serta mendukung pemulihan secara alami dan aman.</p>
+        ';
+      include '../../../src/partials/section.php';
+
+      $title = "Produk Utama";
+      $content = '
+          <p>Produk-Produk di toko kami mencakup hal hal seperti:</p>
+          <ul>
+            <li>Suplemen imun dan energi</li>
+            <li>Vitamin harian & multivitamin</li>
+            <li>Suplemen olahraga & kebugaran</li>
+          </ul>
+        ';
+      include '../../../src/partials/section.php';
+
+    ?>
   </main>
 
   <!-- Footer -->
