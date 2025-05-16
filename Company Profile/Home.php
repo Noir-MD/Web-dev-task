@@ -4,36 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Company Profile</title>
-  <!-- Bootstrap CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Optional: Your custom CSS -->
-  <link rel="stylesheet" href="Function/CSS/Style.css" />
+  <link href="../src/main.css" rel="stylesheet">
 </head>
 <body>
 <div class="container-fluid min-vh-100 d-flex flex-column p-0">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <?php $active = 'home'; include __DIR__ . '/../src/Partials/navbar.php'; ?>
+
+  <!-- Hero Section -->
+  <header class="bg-secondary text-white text-center py-5 mb-4">
     <div class="container">
-      <a class="navbar-brand" href="home.php">UMI IKA STORE</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="home.php">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Function/About/about.php">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Function/Contact/contact.php">Contact</a>
-          </li>
-        </ul>
-      </div>
+      <h1 class="display-4">Selamat Datang di UMI IKA STORE</h1>
+      <p class="lead">Toko terpercaya untuk produk suplemen kesehatan dan herbal alami pilihan.</p>
     </div>
-  </nav>
+  </header>
 
   <!-- Main Content -->
   <main class="flex-grow-1">

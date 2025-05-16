@@ -1,0 +1,14 @@
+$primary: #03C04A;
+$secondary: #01752e;
+
+@import "../asset/node_modules/bootstrap/scss/bootstrap.scss";
+@import "../asset/node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "./Style.css";
+
+.content-box {
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.content-box:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
