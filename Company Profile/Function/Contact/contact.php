@@ -11,17 +11,10 @@
 <body>
 <div class="container-fluid min-vh-100 d-flex flex-column p-0">
 
-  <!-- Header -->
-  <header class="bg-primary text-white py-4 mb-4">
-    <div class="container">
-      <h1 class="mb-0">Contact Us</h1>
-    </div>
-  </header>
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container">
-      <a class="navbar-brand" href="../../home.php">Company Profile</a>
+      <a class="navbar-brand" href="../../home.php">Contact Us</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contactNav" aria-controls="contactNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
