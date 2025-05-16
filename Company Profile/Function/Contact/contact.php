@@ -4,35 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us</title>
-  <!-- Bootstrap CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../CSS/Style.css">
+  <link href="../../../src/main.css" rel="stylesheet">
 </head>
 <body>
 <div class="container-fluid min-vh-100 d-flex flex-column p-0">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-    <div class="container">
-      <a class="navbar-brand" href="../../home.php">Contact Us</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#contactNav" aria-controls="contactNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="contactNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="../../home.php">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../About/about.php">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="contact.php">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <?php $active = 'contact'; include __DIR__ . '/../../../src/Partials/navbar.php'; ?>
 
   <!-- Main Content -->
   <main class="flex-grow-1">
