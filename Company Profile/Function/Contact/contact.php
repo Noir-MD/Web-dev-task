@@ -13,7 +13,7 @@
   <?php $active = 'contact'; include __DIR__ . '/../../../src/Partials/navbar.php'; ?>
 
   <!-- Main Content -->
-  <main class="flex-grow-1">
+  <main class="flex-grow-1" id="main-content" style="opacity: 0; transition: opacity 0.8s;">
     <?php  
 
       $title = "Lokasi Toko";
@@ -39,5 +39,9 @@
 </div>
 <!-- Bootstrap JS Bundle (with Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="../Js/fade animation.js"></script>
+
 </body>
 </html>
