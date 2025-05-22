@@ -6,7 +6,7 @@
   <title>Company Profile</title>
   <link href="../src/main.css" rel="stylesheet">
 </head>
-<body>
+<body class="home-bg-white">
 <div class="container-fluid min-vh-100 d-flex flex-column p-0">
   
   <?php $active = 'home'; include __DIR__ . '/../src/Partials/navbar.php'; ?>
@@ -20,8 +20,8 @@
       <div class="flex-fill d-flex justify-content-center justify-content-md-end mt-4 mt-md-0">
         <div id="slideshow-container" style="position: relative; width: 320px; height: 220px;">
           <img src="Images/steffie 3.jpeg" alt="UMI IKA STORE" class="img-fluid rounded shadow slideshow-img" style="max-width: 320px; max-height: 220px; object-fit: contain; background: #fff; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 1; transition: opacity 0.7s;">
-          <img src="Images/steffie 2.jpeg" alt="UMI IKA STORE 2" class="img-fluid rounded shadow slideshow-img" style="max-width: 320px; max-height: 220px; object-fit: contain; background: #fff; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.7s;">
-          <img src="Images/steffie 1.jpeg" alt="UMI IKA STORE 3" class="img-fluid rounded shadow slideshow-img" style="max-width: 320px; max-height: 220px; object-fit: contain; background: #fff; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.7s;">
+          <img src="Images/british 1.jpeg" alt="UMI IKA STORE 2" class="img-fluid rounded shadow slideshow-img" style="max-width: 320px; max-height: 220px; object-fit: contain; background: #fff; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.7s;">
+          <img src="Images/madu Tpose.jpeg" alt="UMI IKA STORE 3" class="img-fluid rounded shadow slideshow-img" style="max-width: 320px; max-height: 220px; object-fit: contain; background: #fff; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.7s;">
         </div>
       </div>
     </div>
