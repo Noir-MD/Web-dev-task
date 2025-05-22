@@ -8,3 +8,4 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('admin', 'Admin::dashboard');
 $routes->post('admin', 'Admin::dashboard');
+$routes->get('admin/data', 'Admin::data');

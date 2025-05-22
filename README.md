@@ -1,6 +1,6 @@
-# Version 1.6
+# Version 1.7
 Changelog:  
-- making it so that the image can be uploaded in both the database and the website
+- added a page to edit or delete a data from the database
 
 # Bootstrap Installation
 

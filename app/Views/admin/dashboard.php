@@ -55,3 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['image'])) {
     <input type="file" id="image" name="image" accept="image/*" required><br>
     <button type="submit" name="submit">Tambah Produk</button>
 </form>
+
+<a href="<?= base_url('admin/data') ?>">
+    <button>Lihat, Edit & Hapus Data Produk</button>
+</a>
