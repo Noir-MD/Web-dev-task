@@ -9,3 +9,4 @@ $routes->get('/', 'Home::index');
 $routes->get('admin', 'Admin::dashboard');
 $routes->post('admin', 'Admin::dashboard');
 $routes->get('admin/data', 'Admin::data');
+$routes->post('admin/data', 'Admin::data');
