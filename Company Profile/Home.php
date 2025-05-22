@@ -9,14 +9,21 @@
 <body>
 <div class="container-fluid min-vh-100 d-flex flex-column p-0">
   
-  <!-- Navigation -->
   <?php $active = 'home'; include __DIR__ . '/../src/Partials/navbar.php'; ?>
 
-  <!-- Hero Section -->
-  <header class="bg-secondary text-white text-center py-5 mb-4">
-    <div class="container">
-      <h1 class="display-4">Selamat Datang di UMI IKA STORE</h1>
-      <p class="lead">Toko terpercaya untuk produk suplemen kesehatan dan herbal alami pilihan.</p>
+  <header class="bg-secondary text-white py-5 mb-4" style="min-height: 380px; display: flex; align-items: center;">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <div class="text-center text-md-start flex-fill">
+        <h1 class="display-4 fw-bold mb-3">Selamat Datang di UMI IKA STORE</h1>
+        <p class="lead">Toko produk suplemen kesehatan dan herbal alami pilihan.</p>
+      </div>
+      <div class="flex-fill d-flex justify-content-center justify-content-md-end mt-4 mt-md-0">
+        <div id="slideshow-container" style="position: relative; width: 320px; height: 220px;">
+          <img src="Images/steffie 3.jpeg" alt="UMI IKA STORE" class="img-fluid rounded shadow slideshow-img" style="max-width: 320px; max-height: 220px; object-fit: contain; background: #fff; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 1; transition: opacity 0.7s;">
+          <img src="Images/steffie 2.jpeg" alt="UMI IKA STORE 2" class="img-fluid rounded shadow slideshow-img" style="max-width: 320px; max-height: 220px; object-fit: contain; background: #fff; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.7s;">
+          <img src="Images/steffie 1.jpeg" alt="UMI IKA STORE 3" class="img-fluid rounded shadow slideshow-img" style="max-width: 320px; max-height: 220px; object-fit: contain; background: #fff; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.7s;">
+        </div>
+      </div>
     </div>
   </header>
 
@@ -39,9 +46,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
-    <p class="mb-0">&copy; 2025 Avicenna. This is just a placeholder for the footer.</p>
-  </footer>
+  <?php include __DIR__ . '/../src/partials/footer.php'; ?>
 
 </div>
 <!-- Bootstrap JS Bundle (with Popper) -->
@@ -49,6 +54,16 @@
 
 <!-- Custom JS -->
 <script src="Function/Js/fade animation.js"></script>
+<script>
+  // Simple JS slideshow
+  const slides = document.querySelectorAll('.slideshow-img');
+  let currentSlide = 0;
+  setInterval(() => {
+    slides[currentSlide].style.opacity = 0;
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].style.opacity = 1;
+  }, 3000);
+</script>
 
 </body>
 </html>

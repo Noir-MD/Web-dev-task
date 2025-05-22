@@ -12,10 +12,8 @@
 <body>
 <div class="container-fluid min-vh-100 d-flex flex-column p-0">
 
-  <!-- Navigation -->
   <?php $active = 'about'; include __DIR__ . '/../../../src/Partials/navbar.php'; ?>
 
-  <!-- Main Content -->
   <main class="flex-grow-1" id="main-content" style="opacity: 0; transition: opacity 0.8s;">
     <?php  
 
@@ -39,10 +37,7 @@
     ?>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3 mt-auto">
-    <p class="mb-0">&copy; 2025 Avicenna. This is just a placeholder for the footer.</p>
-  </footer>
+  <?php include __DIR__ . '/../../../src/partials/footer.php'; ?>
 
 </div>
 <!-- Bootstrap JS Bundle (with Popper) -->
