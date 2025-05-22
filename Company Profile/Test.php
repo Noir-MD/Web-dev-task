@@ -17,5 +17,19 @@
     <div class="text-bg-info p-3">Info with contrasting color</div>
     <div class="text-bg-light p-3">Light with contrasting color</div>
     <div class="text-bg-dark p-3">Dark with contrasting color</div>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Images/british 1.jpeg" class="d-block w-100 rounded shadow" alt="british 1" style="max-width:220px; max-height:180px; object-fit:contain; background:#fff;">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/british 2.jpeg" class="d-block w-100 rounded shadow" alt="british 2" style="max-width:220px; max-height:180px; object-fit:contain; background:#fff;">
+    </div>
+    <div class="carousel-item">
+      <img src="Images/british 3.jpeg" class="d-block w-100 rounded shadow" alt="british 3" style="max-width:220px; max-height:180px; object-fit:contain; background:#fff;">
+    </div>
+  </div>
+</div>
 </body>
 </html>

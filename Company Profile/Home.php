@@ -23,22 +23,19 @@
 
   <!-- Main Content -->
   <main class="flex-grow-1">
+
 <?php  
-  $title = "British Propolish";
-  $desc = "British Propolis adalah propolis premium asal Inggris dari lebah empat musim, berkualitas tinggi dan direkomendasikan di Indonesia.";
-  $img = "Images/british 1.jpeg";
-  include '../src/partials/product-section.php';
+  include '../src/partials/db.php';
+  $products = query("SELECT * FROM produk"); // Pastikan nama tabel dan kolom sesuai
 
-  $title = "Steffie";
-  $desc = "Steffi adalah pemanis alami berupa stevia tetes. Steffi dirancang sebagai pengganti gula yang aman dan sehat, dengan kandungan kalori nol dan rasa manis yang kuat";
-  $img = "Images/steffie 1.jpeg";
-  include '../src/partials/product-section.php';
-
-  $title = "Madu THE POST";
-  $desc = "Madu THE POST adalah madu murni berkualitas tinggi yang diambil langsung dari alam, tanpa campuran. Kaya nutrisi untuk mendukung daya tahan tubuh, meningkatkan energi, dan menjaga kesehatan secara alami. Cocok dikonsumsi setiap hari.";
-  $img = "Images/madu Tpose.jpeg";
-  include '../src/partials/product-section.php';
+  foreach ($products as $product) {
+    $title = $product['title'];
+    $desc  = $product['description'];
+    $img   = $product['image'];
+    include '../src/partials/product-section.php';
+  }
 ?>
+
   </main>
 
   <!-- Footer -->
