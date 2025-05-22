@@ -19,38 +19,45 @@ if (isset($_POST['edit_id'])) {
     $edit_id = intval($_POST['edit_id']);
     $edit_title = $conn->real_escape_string($_POST['edit_title']);
     $edit_description = $conn->real_escape_string($_POST['edit_description']);
-    $conn->query("UPDATE produk SET title='$edit_title', description='$edit_description' WHERE id=$edit_id");
-    echo "<p>Produk berhasil diupdate.</p>";
+    $query = "UPDATE produk SET title='$edit_title', description='$edit_description' WHERE id=$edit_id";
+    if ($conn->query($query) === TRUE) {
+        echo "<p>Produk berhasil diupdate.</p>";
+    } else {
+        echo "<p>Gagal mengupdate produk: " . htmlspecialchars($conn->error) . "</p>";
+    }
 }
 
 // Tampilkan data produk
 $result = $conn->query("SELECT * FROM produk ORDER BY id DESC");
 echo "<table border='1' cellpadding='5'><tr><th>ID</th><th>Nama</th><th>Deskripsi</th><th>Gambar</th><th>Aksi</th></tr>";
 while ($row = $result->fetch_assoc()) {
-    echo "<tr>";
-    echo "<td>{$row['id']}</td>";
     if (isset($_GET['edit']) && $_GET['edit'] == $row['id']) {
-        // Form edit
-        echo "<form method='post'>";
-        echo "<td><input type='text' name='edit_title' value='".htmlspecialchars($row['title'])."'></td>";
-        echo "<td><input type='text' name='edit_description' value='".htmlspecialchars($row['description'])."'></td>";
+  
+        echo "<form method='post' action='" . base_url('admin/data') . "'>";
+        echo "<tr>";
+        echo "<td>{$row['id']}</td>";
+        echo "<td><input type='text' name='edit_title' value='" . htmlspecialchars($row['title']) . "'></td>";
+        echo "<td><input type='text' name='edit_description' value='" . htmlspecialchars($row['description']) . "'></td>";
         echo "<td><img src='/Web/{$row['image']}' width='80'></td>";
         echo "<td>
                 <input type='hidden' name='edit_id' value='{$row['id']}'>
                 <button type='submit'>Simpan</button>
-                <a href='".base_url('admin/data')."'>Batal</a>
+                <a href='" . base_url('admin/data') . "'>Batal</a>
               </td>";
+        echo "</tr>";
         echo "</form>";
     } else {
-        echo "<td>".htmlspecialchars($row['title'])."</td>";
-        echo "<td>".htmlspecialchars($row['description'])."</td>";
+        echo "<tr>";
+        echo "<td>{$row['id']}</td>";
+        echo "<td>" . htmlspecialchars($row['title']) . "</td>";
+        echo "<td>" . htmlspecialchars($row['description']) . "</td>";
         echo "<td><img src='/Web/{$row['image']}' width='80'></td>";
         echo "<td>
                 <a href='?edit={$row['id']}'>Edit</a> | 
                 <a href='?delete={$row['id']}' onclick=\"return confirm('Yakin hapus?')\">Hapus</a>
               </td>";
+        echo "</tr>";
     }
-    echo "</tr>";
 }
 echo "</table>";
 
