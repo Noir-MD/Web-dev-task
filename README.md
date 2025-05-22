@@ -1,7 +1,6 @@
-# Version 1.3
+# Version 1.6
 Changelog:  
-- adding a reuseable section command for the website
-- adding db connection code if needed
+- making it so that the image can be uploaded in both the database and the website
 
 # Bootstrap Installation
 
