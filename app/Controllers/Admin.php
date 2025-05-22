@@ -29,4 +29,9 @@ class Admin extends BaseController
         }
         return view('admin/dashboard', ['message' => $message]);
     }
+
+    public function data()
+        {
+            return view('admin/data');
+        }
 }
