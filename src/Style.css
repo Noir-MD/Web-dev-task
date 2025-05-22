@@ -2,8 +2,12 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #fff;
+  background: linear-gradient(135deg, rgb(1, 117, 46) 0%, #95eb4e 100%);
   color: #333;
+}
+
+body.home-bg-white {
+  background: #ffffff !important;
 }
 
 /* logo */
